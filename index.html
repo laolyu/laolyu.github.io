@@ -51,17 +51,17 @@
             }
             var time2 = new Date().Format("yyyy-MM-dd HH:mm");
             var currentSeconds = new Date().getSeconds()
-            if(currentSeconds < 10) currentSeconds = '0' + currentSeconds
+            if (currentSeconds < 10) currentSeconds = '0' + currentSeconds
             $('time').innerHTML = `<span>${time2}</span>:<span style="font-size:36px">${currentSeconds}</span>`
         }
         function $(id) {
             return document.getElementById(id);
         }
     </script>
-    <div style="position:relative;">
-        <img src='./ssm.jpg' />
-        <div id="time" style="position:absolute; z-index:2; left:230px; top:441px; font-size:29px">
-        </div>
+    <div class="msg_desc">
+        <img style="max-wIDth:100%;overflow:hidden;" src='./ssm.jpg' alt="">
+        <div id="time" style="position:absolute; z-index:2; left:230px; top:441px; font-size:29px"></div>
+    </div>
 
 </body>
 
