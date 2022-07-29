@@ -52,7 +52,7 @@
             var time2 = new Date().Format("yyyy-MM-dd HH:mm");
             var currentSeconds = new Date().getSeconds()
             if (currentSeconds < 10) currentSeconds = '0' + currentSeconds
-            $('time').innerHTML = `<span>${time2}</span>:<span style="font-size:46px">${currentSeconds}</span>`
+            $('time').innerHTML = `<span>${time2}</span>:<span style="font-size:46px"><strong>${currentSeconds}</strong></span>`
         }
         function $(id) {
             return document.getElementById(id);
@@ -60,7 +60,8 @@
     </script>
     <div class="msg_desc">
         <img style="max-wIDth:100%;overflow:hidden;" src='./ssm.jpg' alt="">
-        <div id="time" style="position:absolute; z-index:2; left:295px; top:565px; font-size:36px"></div>
+        <div id="time" style="position:absolute; z-index:2; left:295px; top:565px; font-size:38px; font-family:SimHei;">
+        </div>
     </div>
 
 </body>
